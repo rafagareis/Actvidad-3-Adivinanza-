@@ -4,5 +4,8 @@ p
 .miestilo1
 {color: grey; font-weight: bolder;}
 
+.table,th,td
+{border:3px solid cadetblue;}
+
 body
-{background-color: skyblue;}
+{background-color: grey;}
