@@ -37,24 +37,50 @@
       </form>
     </div>
   </nav>
-<h1>Adivinanza!!</h1> 
+<h1>Adivinanza de la semana!!</h1> 
 <br>
 <br>
 <h2>Sabemos que sos un gran fanatico de nuestra pagina!!</h2>
 <br>
-<p>Por lo que te invitamos a poner a prueba tus conocimientos en el siguiente juego de adivinanza, se basa simplemente en responde una pregunta en la cual solo tendras 4 intentos. Mucha suerte!!</p>
-<script>
-// Juego adivinanza
-// Ingresar nombre - ingresar numero entre 1 y 20
-var min = 1; 
-var max=20; 
-var itentos=0;
-var nombre = prompt ("Bienvenido, como te llamas?);
-var numero;
-for(intentos; intentos<4; intentos++)
-{numero= parseInt(prompt(nombre+' ,ingresa un numero entre el '+min+' y el '+max'));
+<p>Por lo que te invitamos a poner a prueba tus conocimientos en el siguiente juego de adivinanza, se basa simplemente en responder una pregunta en la cual solo tendras 4 intentos. Mucha suerte!!</p>
+<button="<div class="input-group">
+  <span class="input-group-btn">
+   
+  </span>
+  <input type="button" onclick="pres();" class="form-control" name="name" id="botoncito" value="Resolver" placeholder="" aria-label="">
+</div></button>
 
-</script>
-</div>
+<br><br>
+
+	<script>
+    function pres(){  
+
+var pregunta = ["¿Cuales es el mejor ejercicio para la hipetrofia muscular de las piernas?"];
+var respuestacorrecta = ["sentadilla"];
+var intentos = 1;
+var cant_intentos = 4;
+var usuario;
+
+
+for(intentos; intentos < 5; intentos++)
+{usuario = prompt (pregunta);
+
+if(usuario!=respuestacorrecta && intentos == 1)
+{ alert ("intente nuevamente, le quedan 3 intentos. Pista: empieza con la letra S")}
+else if(usuario!=respuestacorrecta && intentos == 2)
+{ alert ("intente nuevamente, le quedan 2 intentos. Pista; termina con la letra A")}
+else if(usuario!=respuestacorrecta && intentos == 3)
+{ alert ("intente nuevamente, le quedan 1 intentos.")}
+else if(usuario!=respuestacorrecta && intentos == 4)
+{ alert ("Usted ha perdido, ya realizo los 4 intentos. La respuesta era 'sentadillas'")}
+else {if(usuario==respuestacorrecta)
+{alert ("Correcto"); break} }
+
+
+
+}  }
+
+    </script>
+
 </body>
 </html>
